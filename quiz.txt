@@ -1,5 +1,24 @@
 1. Why do you use "using strict" at the top of your JS files?
+A1. You can use "using strict" either globally or locally.  It deos a lot of things,
+it forces you to declare variables properly, gives better errors, keeps code from being
+introduced, doesn't allow duplicates and using old features that are no longer available.
+
 2. What does line 3 mean?
+A2. You are assinging the variable 'count' the number '0' when the script runs.
+
 3. What is happening on lines 5-8 and why?
+A3. You're using the 'document.querySelector' to grab elements from the DOM and
+assigning them to a constant variable.
+
 4. If you implemented the functionality of the buttons,
    why do you think I wrote the JS code the way I did?
+A4. You are applying "using strict" globally, assinging your beginning
+count with 'let', you're using that globally instead of 'var'. 'var' can
+be assigned again, but 'let' can't.  Since you're using that globally, it's
+better. Using the 'querySelector' lets you pull the class directly from the
+DOM, ensuring fewer mistakes, and just easier way of assigning your constants.
+You seperated your functions for each button and then followed with the event
+listeners for each button.  I am honestly not sure if the function has to
+come before the listener, but it makes logical since in the order that they will
+operate and makes the code easier to follow if things are grouped in a logical
+fashion.
