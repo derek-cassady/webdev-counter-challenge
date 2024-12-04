@@ -17,14 +17,14 @@ body {
     background-color: var(--card-bg-color);
     color: var(--text-color);
     width: 90%;
-    max-width: 500px;
+    max-width: 300px;
     margin: auto;
 }
 
 .app-card {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 300px;
     flex: 1;
 }
 
@@ -66,4 +66,20 @@ body {
 }
 
 @media (width >= 500px) {
+
+    .main {
+        display: flex;
+        background-color: var(--card-bg-color);
+        color: var(--text-color);
+        width: 75%;
+        max-width: 500px;
+        margin: auto;
+    }
+    
+    .app-card {
+        flex-direction: row;
+        max-width: 1020px;
+        flex: 1;
+    }
+
 }
